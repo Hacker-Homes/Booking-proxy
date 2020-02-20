@@ -2,7 +2,7 @@
   "routes": [
   {
     "route": "/booking",
-    "address": "http://52.53.211.152:3333/booking"
+    "address": "localhost:3333/booking"
   }
 ]
 }
