@@ -1,0 +1,10 @@
+# Proxy
+
+version: '3'
+
+services:
+  booking_proxy:
+    build: .
+    container_name: booking_proxy1
+    ports:
+      - 3030:3030

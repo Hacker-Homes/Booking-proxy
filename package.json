@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hacker-home/Airbnb-booking-proxy.git"
+    "url": "git+https://github.com/Hacker-Home"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hacker-home/Airbnb-booking-proxy/issues"
+    "url": "https://github.com/Hacker-Home"
   },
-  "homepage": "https://github.com/hacker-home/Airbnb-booking-proxy#readme",
+  "homepage": "https://github.com/Hacker-Home",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
