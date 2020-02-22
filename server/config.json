@@ -2,7 +2,11 @@
   "routes": [
   {
     "route": "/booking",
-    "address": "localhost:3333/booking"
+    "address": "localhost:5555/booking"
+  },
+  {
+    "route": "/room",
+    "address": "http://localhost:5555/room"
   }
 ]
 }
