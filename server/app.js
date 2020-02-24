@@ -5,7 +5,10 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+const PORT = 3030
+
 const { routes } = require('./config.json');
+
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
@@ -23,6 +26,6 @@ for (route of routes) {
   );
 }
 
-app.listen(3030, () => {
-  console.log('Proxy listening on port 3030');
+app.listen(PORT, () => {
+  console.log(`Proxy listening on port ${PORT}`);
 });
