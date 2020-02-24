@@ -4,7 +4,8 @@
   "description": "> Project description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.19.1",
+    "newrelic": "^6.4.1",
     "nodemon": "^1.19.1"
   }
 }
