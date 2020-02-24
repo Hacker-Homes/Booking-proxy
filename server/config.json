@@ -2,11 +2,11 @@
   "routes": [
   {
     "route": "/booking",
-    "address": "localhost:5555/booking"
+    "address": "http://44.233.161.53:5555/booking"
   },
   {
     "route": "/room",
-    "address": "http://localhost:5555/room"
+    "address": "http://44.233.161.53:5555/room"
   }
 ]
 }
