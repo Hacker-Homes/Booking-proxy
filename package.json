@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Hacker-Home",
   "dependencies": {
+    "axios": "^0.19.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.19.1",
