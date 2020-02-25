@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(morgan('dev'))
 
-app.get('/', (req, res, next) => {
-  
+app.get('/room', (req, res, next) => {
+  console.log(req.query.id)
 })
 
 // for (route of routes) {
