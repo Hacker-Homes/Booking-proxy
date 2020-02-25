@@ -1,0 +1,18 @@
+[Unit]
+Description=start node server - start node server on startup, restart on failure
+After=network.target
+
+[Service]
+
+Environment=NODE_ENV=production PORT=3030
+Type=simple
+ExecStart=/usr/bin/node /home/ubuntu/Booking-proxy/server/app.js
+Restart=on-failure
+RestartSec=10
+
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nodejs-example
+
+[Install]
+WantedBy=multi-user.target
