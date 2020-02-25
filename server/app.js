@@ -7,7 +7,8 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const morgan = require('morgan');
 
-const PORT = 3030
+const PORT = 3030;
+const ROOM_COMPONENT_IP = 'http://44.233.161.53';
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
@@ -17,6 +18,9 @@ app.use(morgan('dev'))
 
 app.get('/room', (req, res, next) => {
   console.log(req.url)
+  axios.get(ROOM_COMPONENT_IP + req.url)
+    .then(response => res.send(response.data))
+    .catch(e => res.sendStatus(500))
 })
 
 // for (route of routes) {
