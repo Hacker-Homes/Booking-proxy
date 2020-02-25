@@ -8,7 +8,7 @@ const axios = require('axios');
 const morgan = require('morgan');
 
 const PORT = 3030;
-const ROOM_COMPONENT_IP = 'http://44.233.161.53';
+const ROOM_COMPONENT_IP = 'http://44.233.161.53:5555';
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
