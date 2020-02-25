@@ -17,10 +17,8 @@ app.use(cors());
 app.use(morgan('dev'))
 
 app.get('/room', (req, res, next) => {
-  console.log(ROOM_COMPONENT_IP + req.url)
   axios.get(ROOM_COMPONENT_IP + req.url)
     .then((response) => {
-      console.log(response)
       res.send(response.data);
     })
     .catch(e => res.sendStatus(500))
