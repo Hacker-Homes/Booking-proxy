@@ -16,7 +16,7 @@ app.use(cors());
 app.use(morgan('dev'))
 
 app.get('/room', (req, res, next) => {
-  console.log(req.query.id)
+  console.log(req.url)
 })
 
 // for (route of routes) {
