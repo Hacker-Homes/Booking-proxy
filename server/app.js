@@ -8,7 +8,7 @@ const axios = require('axios');
 
 const PORT = 3030;
 const ROOM_COMPONENT_IP_LOADBALANCER = 'http://35.155.225.182';
-console.log('ROOM_COMPONENT_IP_LOADBALANCER', ROOM_COMPONENT_IP_LOADBALANCER)
+// console.log('ROOM_COMPONENT_IP_LOADBALANCER', ROOM_COMPONENT_IP_LOADBALANCER)
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
