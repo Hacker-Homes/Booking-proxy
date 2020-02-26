@@ -1,0 +1,12 @@
+upstream remote_servers  {
+   server 44.232.46.253:5555;
+   server 44.233.161.53:5555;
+}
+
+server {
+   listen   80;
+   server_name  35.155.225.182;
+   location / {
+     proxy_pass  http://remote_servers;
+   }
+}
