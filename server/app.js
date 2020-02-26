@@ -15,7 +15,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(cors());
-app.use(morgan('dev'))
+// app.use(morgan('dev'))
 
 app.get('/room', (req, res, next) => {
   axios.get(ROOM_COMPONENT_IP_LOADBALANCER + req.url)
