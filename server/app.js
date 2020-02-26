@@ -1,11 +1,10 @@
 require('newrelic')
 const express = require('express');
-const proxy = require('http-proxy-middleware');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 
 const PORT = 3030;
 const ROOM_COMPONENT_IP_LOADBALANCER = 'http://35.155.225.182';
