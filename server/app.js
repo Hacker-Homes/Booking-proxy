@@ -19,7 +19,7 @@ fs.readFile(path.join(__dirname, '../public/index.html'), (err, data) => {
 })
 
 const app = express();
-app.use(express.static(path.join(__dirname, '../public')));
+// app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(cors());
 // app.use(morgan('dev'))
@@ -28,6 +28,10 @@ app.get('/', (req, res, next) => {
   if (indexHTML) {
     res.send(indexHTML)
   }
+})
+
+app.get('/loaderio-d66c8240bc51cf4f478f2fc097e9d05a.html', (req, res, next) => {
+  res.send('loaderio-d66c8240bc51cf4f478f2fc097e9d05a')
 })
 
 app.get('/room', (req, res, next) => {
