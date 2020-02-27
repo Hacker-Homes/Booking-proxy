@@ -4,17 +4,31 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const axios = require('axios');
+const fs = require('fs');
+
 // const morgan = require('morgan');
 
 const PORT = 3030;
 const ROOM_COMPONENT_IP_LOADBALANCER = 'http://35.155.225.182';
 // console.log('ROOM_COMPONENT_IP_LOADBALANCER', ROOM_COMPONENT_IP_LOADBALANCER)
 
+
+fs.readFile(path.join(__dirname, '../public/index.html'), (err, data) => {
+  if (err) throw err;
+  const indexHTML = data;
+})
+
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(cors());
 // app.use(morgan('dev'))
+
+app.get('/', (req, res, next) => {
+  if (indexHTML) {
+    res.send(indexHTML)
+  }
+})
 
 app.get('/room', (req, res, next) => {
   axios.get(ROOM_COMPONENT_IP_LOADBALANCER + req.url)
