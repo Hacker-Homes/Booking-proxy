@@ -28,7 +28,8 @@ app.use(cors());
 
 app.get('/', (req, res, next) => {
   if (indexHTML) {
-    res.sendFile(indexHTML)
+    res.setHeader('Content-Type', 'text/html');
+    res.send(indexHTML);
   }
 })
 
