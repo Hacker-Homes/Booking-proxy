@@ -12,10 +12,11 @@ const PORT = 3030;
 const ROOM_COMPONENT_IP_LOADBALANCER = 'http://35.155.225.182';
 // console.log('ROOM_COMPONENT_IP_LOADBALANCER', ROOM_COMPONENT_IP_LOADBALANCER)
 
+let indexHTML;
 
 fs.readFile(path.join(__dirname, '../public/index.html'), (err, data) => {
   if (err) throw err;
-  const indexHTML = data;
+  indexHTML = data;
 })
 
 const app = express();
@@ -23,6 +24,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 // app.use(morgan('dev'))
+
 
 app.get('/', (req, res, next) => {
   if (indexHTML) {
