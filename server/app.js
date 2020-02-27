@@ -28,7 +28,7 @@ app.use(cors());
 
 app.get('/', (req, res, next) => {
   if (indexHTML) {
-    res.send(indexHTML)
+    res.sendFile(indexHTML)
   }
 })
 
