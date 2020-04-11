@@ -1,17 +1,14 @@
-# Project Name
+# Hacker Home booking proxy
 
-> Project description
+> a reverse proxy for the Hacker Home booking component
 
 ## Related Projects
 
-  - https://github.com/hacker-home/Airbnb-more-homes
-  - https://github.com/hacker-home/Airbnb-info
-  - https://github.com/hacker-home/Airbnb-reviews
-  - https://github.com/hacker-home/Airbnb-photos
+  - https://github.com/Hacker-Homes
 
 ## Usage
 
-> Proxy server for Hacker-home Airbnb FEC project
+> Proxy server for Hacker-home Airbnb project
 
 ## Requirements
 - Node 6.13.0
